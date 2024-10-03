@@ -1,3 +1,7 @@
+// Made by Laurent Henri Plassart, 2153058
+// of ESE-1D-e for Microcontrollers 1
+// as an Assignment for Week 2 S1,P1
+
 const int ledPin = LED_BUILTIN;  // the number of the LED pin
 int ledState = LOW;  // ledState used to set the LED
 unsigned long previousMillis = 0;  // will store last time LED was updated
@@ -8,7 +12,7 @@ void setup() {
   Serial.begin(9600);
   Serial.println("Laurent Henri Plassart");
   Serial.println("2153058");
-  Serial.println("Week 2. Basics");
+  Serial.println("Week 2. Digital");
 
   pinMode(ledPin, OUTPUT);
 
