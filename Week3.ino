@@ -1,3 +1,7 @@
+// Made by Laurent Henri Plassart, 2153058
+// of ESE-1D-e for Microcontrollers 1
+// as an Assignment for Week 3 S1,P1
+
 const int analogInPinPM_1 = A0; // Potentiometer 1 PC0
 const int analogInPinPM_2 = A1; // PM 2 PC1
                                 // Connect both of PMs VCC to the + of breadboard (same with GND)
