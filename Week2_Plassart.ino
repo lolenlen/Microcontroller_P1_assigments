@@ -4,9 +4,9 @@
 
 const int ledPin = LED_BUILTIN;  // the number of the LED pin
 int ledState = LOW;  // ledState used to set the LED
-unsigned long previousMillis = 0;  // will store last time LED was updated
+unsigned long previousMillis = 0;  // store last time LED was updated
 long interval = 1000;  // interval at which to blink (milliseconds)
-int direction = 1;  // Default direction is forward
+int direction = 1;  // Default direction forward
 
 void setup() {
   Serial.begin(9600);
@@ -15,8 +15,8 @@ void setup() {
   Serial.println("Week 2. Digital");
 
   pinMode(ledPin, OUTPUT);
-
-  // Set Pins for LEDs
+  //set pins for
+  // LEDs
   pinMode(13, OUTPUT);
   pinMode(12, OUTPUT);
   pinMode(11, OUTPUT);
@@ -24,12 +24,12 @@ void setup() {
   pinMode(9, OUTPUT);
   pinMode(8, OUTPUT);
 
-  // Buttons pins
+  // Buttons
   pinMode(7, OUTPUT);
   pinMode(6, INPUT_PULLUP);  // K1 button
-  pinMode(5, INPUT_PULLUP);  // K2 button
-  pinMode(4, INPUT_PULLUP);  // K3 button
-  pinMode(3, INPUT_PULLUP);  // K4 button
+  pinMode(5, INPUT_PULLUP);  // K2 
+  pinMode(4, INPUT_PULLUP);  // K3 
+  pinMode(3, INPUT_PULLUP);  // K4 
 }
 
 int led = 8;
@@ -43,7 +43,7 @@ void loop() {
   int buttonK3 = digitalRead(4);  
   int buttonK4 = digitalRead(3);  
 
-  // Button K1 logic - Increase interval
+  // Button K1 logic that increases interval
   if (buttonK1 == LOW) {
     delay(250);  
     Serial.println("K1");
@@ -67,7 +67,7 @@ void loop() {
     }
   }
 
-  // Button K3 logic - Move LEDs Left to Right, vice versa
+  // Button K3 logic that moves LEDs Left to Right, vice versa
   if (buttonK3 == LOW) {
     delay(250);
     Serial.println("K3");
@@ -78,7 +78,7 @@ void loop() {
     }
   }
 
-  // Button K4 logic - Stop and continue LED
+  // Button K4 logic that stops and continue LED
   if (buttonK4 == LOW) {
     delay(250);
     Serial.println("K4");
