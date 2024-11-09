@@ -3,13 +3,13 @@
 // as an Assignment for Week 1 S1,P1
 
 void setup() {
-  // Welcome message
+  // Welccome message
   Serial.begin(9600);
   Serial.println("Laurent Henri Plassart");
   Serial.println("2153058");
   Serial.println("Week 1. Basics");
 
-  // Set Pins 13, 12, 11, 10, 9, and 8 as outputs for the LEDs
+  // Set Pins 13, 12, 11, 10, 9, and 8 as outputs LEDs
   pinMode(13, OUTPUT);
   pinMode(12, OUTPUT);
   pinMode(11, OUTPUT);
@@ -21,7 +21,7 @@ void setup() {
 
 void loop() {
   // Turn the LEDs on from PB0/D6 to PB5/D1
-  // Wait for 0.5 second each time
+  // Wait for 100ms each time
   digitalWrite(8, HIGH);
   delay(100)); 
   digitalWrite(9, HIGH);
@@ -37,7 +37,7 @@ void loop() {
 
 
   // Turn the LEDs off from D1 to D6
-  // Wait for 0.5 second each time
+  // Wait for 100ms each time
   digitalWrite(13, LOW);
   delay(100));
   digitalWrite(12, LOW);
@@ -51,8 +51,9 @@ void loop() {
   digitalWrite(8, LOW);
   delay(100));
 
-  // Turn the LEDs on from D1 to D6
-  // Wait for 0.5 second each time
+  // Opposite way of
+  // Turning the LEDs on from D1 to D6
+  // Wait for 100ms each time
   digitalWrite(13, HIGH);
   delay(100));
   digitalWrite(12, HIGH);
@@ -67,7 +68,7 @@ void loop() {
   delay(100));
 
   // Turn the LEDs off from D6 to D1
-  // Wait for 0.5 second each time
+  // Wait for 100ms each time
   digitalWrite(8, LOW);
   delay(100));
   digitalWrite(9, LOW);
