@@ -1,3 +1,7 @@
+// Made by Laurent Henri Plassart, 2153058
+// of ESE-1D-e for Microcontrollers 1
+// as a Requirement for Week 6 S1,P1
+
 #include <Wire.h> 
 #include <LiquidCrystal_I2C.h>
 
@@ -16,6 +20,7 @@ bool LEDState = false;       // Tracks the LEDState
 
 void setup()
 {
+  // make sure to initialize lcd and have the backlight on to be visible
   lcd.init();                    
   lcd.backlight();
   lcd.setCursor(0,0);
@@ -28,6 +33,7 @@ void setup()
   pinMode(20, INPUT_PULLUP); 
 }
 
+// led toggle checks if led is already on or not then does the other
 void LEDToggle() {
   LEDState = !LEDState; 
   digitalWrite(13, LEDState ? HIGH : LOW);
