@@ -1,3 +1,7 @@
+// Made by Laurent Henri Plassart, 2153058
+// of ESE-1D-e for Microcontrollers 1
+// as an Assignment for Week 5 S1,P1 in HAN
+
 const int analogPin = A0;
 
 unsigned long previousMillis = 0;  // will store last time LED was updated
