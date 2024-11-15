@@ -20,7 +20,7 @@ void setup() {
   pinMode(8, OUTPUT);
   pinMode(1, OUTPUT);
 
-  // check if the play has guessed 3 times then set the amount of tries to 0
+  // check if the user has guessed 3 times then set the amount of tries to 0
   guessAmountLeft = guessAmount;
   tries = 0;
 }
